@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Designed and developed by 2019 skydoves (Jaewoong Eum)
+
+    Licensed under the Stream License;
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <androidx.preference.Preference
+    android:title="Account preferences"
+    app:iconSpaceReserved="false" />
+
+  <com.newsoft.spinner.PowerSpinnerPreference
+    android:key="question1"
+    android:title="Question1"
+    app:spinner_arrow_gravity="end"
+    app:spinner_arrow_padding="8dp"
+    app:spinner_divider_color="@color/white_70"
+    app:spinner_divider_show="true"
+    app:spinner_divider_size="0.2dp"
+    app:spinner_item_array="@array/questions1"
+    app:spinner_popup_animation="normal"
+    app:spinner_popup_background="@color/background900"
+    app:spinner_popup_elevation="14dp" />
+
+  <com.newsoft.spinner.PowerSpinnerPreference
+    android:key="coffee"
+    android:title="Select your favourite coffee"
+    app:spinner_arrow_gravity="end"
+    app:spinner_arrow_padding="8dp"
+    app:spinner_divider_color="@color/white_70"
+    app:spinner_divider_show="true"
+    app:spinner_divider_size="0.2dp"
+    app:spinner_item_array="@array/coffee"
+    app:spinner_popup_animation="normal"
+    app:spinner_popup_background="@color/background900"
+    app:spinner_popup_elevation="14dp" />
+
+  <com.newsoft.spinner.PowerSpinnerPreference
+    android:key="country"
+    android:title="Select your country"
+    app:spinner_arrow_gravity="end"
+    app:spinner_arrow_padding="8dp"
+    app:spinner_divider_color="@color/white_70"
+    app:spinner_divider_show="true"
+    app:spinner_divider_size="0.2dp"
+    app:spinner_item_array="@array/coffee"
+    app:spinner_popup_animation="bounce"
+    app:spinner_popup_background="@color/background900"
+    app:spinner_popup_elevation="14dp" />
+
+</androidx.preference.PreferenceScreen>

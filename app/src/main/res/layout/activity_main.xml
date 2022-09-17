@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Designed and developed by 2019 skydoves (Jaewoong Eum)
+
+    Licensed under the Stream License;
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/background"
+  android:orientation="vertical"
+  android:padding="14dp">
+
+  <com.newsoft.spinner.PowerSpinnerView
+    android:id="@+id/spinnerView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/md_blue_200"
+    android:foreground="?attr/selectableItemBackground"
+    android:gravity="center"
+    android:hint="Question 1"
+    android:padding="10dp"
+    android:textColor="@color/white_93"
+    android:textColorHint="@color/white_70"
+    android:textSize="14.5sp"
+    app:spinner_arrow_gravity="end"
+    app:spinner_arrow_tint="@color/yellow"
+    app:spinner_divider_color="@color/white_70"
+    app:spinner_divider_show="true"
+    app:spinner_divider_size="0.4dp"
+    app:spinner_item_array="@array/questions1"
+    app:spinner_item_height="46dp"
+    app:spinner_popup_animation="normal"
+    app:spinner_popup_background="@color/background800"
+    app:spinner_popup_elevation="14dp"
+    tools:ignore="HardcodedText,UnusedAttribute" />
+
+  <com.newsoft.spinner.PowerSpinnerView
+    android:id="@+id/spinnerView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:background="@color/md_amber_700"
+    android:foreground="?attr/selectableItemBackground"
+    android:hint="What is your favourite color?"
+    android:padding="10dp"
+    android:textColor="@color/white_93"
+    android:textColorHint="@color/white_70"
+    android:textSize="14.5sp"
+    app:spinner_arrow_gravity="start"
+    app:spinner_arrow_padding="8dp"
+    app:spinner_divider_show="false"
+    app:spinner_item_array="@array/colors"
+    app:spinner_item_height="46dp"
+    app:spinner_popup_animation="fade"
+    app:spinner_popup_background="@color/background800"
+    app:spinner_popup_elevation="14dp"
+    tools:ignore="HardcodedText,UnusedAttribute" />
+
+  <com.newsoft.spinner.PowerSpinnerView
+    android:id="@+id/spinnerView2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:background="@color/colorPrimary"
+    android:foreground="?attr/selectableItemBackground"
+    android:hint="Choose an item"
+    android:padding="10dp"
+    android:textColor="@color/white_93"
+    android:textColorHint="@color/white_70"
+    android:textSize="14.5sp"
+    app:spinner_arrow_gravity="end"
+    app:spinner_divider_show="false"
+    app:spinner_item_height="46dp"
+    app:spinner_popup_animation="bounce"
+    app:spinner_popup_background="@color/background800"
+    app:spinner_popup_elevation="14dp"
+    tools:ignore="HardcodedText,UnusedAttribute" />
+</LinearLayout>
