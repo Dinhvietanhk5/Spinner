@@ -29,7 +29,7 @@ Add the dependency below to your module's build.gradle file:
 
 ```gradle
 dependencies {
-    implementation "com.github.skydoves:powerspinner:1.2.4"
+    implementation 'com.github.Dinhvietanhk5:Spinner:-SNAPSHOT'
 }
 ```
 
@@ -40,6 +40,7 @@ Snapshots of the current development version of PowerSpinner are available, whic
 ```Gradle
 repositories {
    maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+   maven { url 'https://jitpack.io' }
 }
 ```
 
@@ -54,7 +55,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 You can implement `PowerSpinnerView` in your XML layout as the below example. You can use `PowerSpinnerView` same as `TextView`. For instance, you can set the default text with the `hint` and `textColorHint` attributes..
 
 ```gradle
-<com.skydoves.powerspinner.PowerSpinnerView
+<com.newsoft.spinner.PowerSpinnerView
   android:layout_width="match_parent"
   android:layout_height="wrap_content"
   android:background="@color/md_blue_200"
@@ -295,7 +296,7 @@ You can implement the spinner preference with the `PowerSpinnerPreference` in yo
     android:title="Account preferences"
     app:iconSpaceReserved="false" />
 
-  <com.skydoves.powerspinner.PowerSpinnerPreference
+  <com.newsoft.spinner.PowerSpinnerPreference
     android:key="question1"
     android:title="Question1"
     app:spinner_arrow_gravity="end"
